@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.1.1">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="880" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KBUT5t56se8aCVCM6UhC-1" value="PRODUTO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-2" value="id(PK) (INT) (AI)&lt;br&gt;nome&lt;br&gt;&lt;div&gt;quantidade&lt;/div&gt;&lt;div&gt;fornecedor&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="KBUT5t56se8aCVCM6UhC-1">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-4" value="CLIENTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="180" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-5" value="id(PK)&lt;br&gt;nome&lt;br&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;telefone&lt;/div&gt;&lt;div&gt;cpf&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="KBUT5t56se8aCVCM6UhC-4">
+          <mxGeometry y="50" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-6" value="&lt;div&gt;RETIRADA_PRODUTO&lt;/div&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="430" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-7" value="&lt;div&gt;id(PK)&lt;/div&gt;&lt;div&gt;produto_id(FK)&lt;/div&gt;&lt;div&gt;cliente_id(FK)&lt;/div&gt;&lt;div&gt;quantidade_retirada&lt;/div&gt;&lt;div&gt;data_retirada&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" vertex="1" parent="KBUT5t56se8aCVCM6UhC-6">
+          <mxGeometry y="50" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KBUT5t56se8aCVCM6UhC-5" target="KBUT5t56se8aCVCM6UhC-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="455" y="420" as="sourcePoint" />
+            <mxPoint x="280" y="555" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="600" />
+              <mxPoint x="400" y="510" />
+              <mxPoint x="440" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KBUT5t56se8aCVCM6UhC-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="KBUT5t56se8aCVCM6UhC-2" target="KBUT5t56se8aCVCM6UhC-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="430" as="sourcePoint" />
+            <mxPoint x="470" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
